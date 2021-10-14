@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Heebo", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: white;
+}
+h2 {
+    font-size: 5rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 5rem;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%) scale(6);
+}
+.home {
+    height: 100vh;
+}
+.first-page {
+    height: 100vh;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first-page img {
+    height: 100%;
+}
+p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.square {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(./img/ball.png);
+    background-size: 10rem 10rem;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 0.5rem;
+            transform: translate(-50%, -50%) scale(6);
+        }
+        .first-page {
+            height: 50vh;
+            background-color: rgb(21, 21, 21);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .first-page img {
+            height: 50%;
+            z-index: 5;
+        }
+        p {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .home {
+            height: 50vh;
+        }
+        .square {
+            width: 5rem;
+            height: 5rem;
+            background-image: url(./img/ball.png);
+            background-size: 5rem 5rem;
+            position: absolute;
+            top: 35%;
+            left: 60%;
+        }
+        nav {
+            display: block;
+            justify-content:start;
+            padding: 0;
+            background: white;
+            
+            
+
+        }
+        ul{
+            position: absolute;
+            display: block;
+            list-style: none;
+            left: 55%;
+            
+            
+        }
+        a{
+            font-size: 1rem;
+            float:inline-end;
+        }
+}
